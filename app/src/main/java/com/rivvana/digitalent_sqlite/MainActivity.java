@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         tvMsg.setText("DB Path : " + myDbPath);
         try {
             db = SQLiteDatabase.openDatabase(myDbPath, null, SQLiteDatabase.CREATE_IF_NECESSARY);
-            db.close();
+           // db.close();
             tvMsg.append("\nAll done");
         } catch (Exception e) {
             tvMsg.append("\nError " + e.getMessage());
